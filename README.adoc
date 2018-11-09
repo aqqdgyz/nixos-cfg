@@ -1,0 +1,14 @@
+nixos-config
+============
+Bjørn Forsman <bjorn.forsman@gmail.com>
+
+Configuration files for my https://nixos.org/[NixOS] machines.
+
+Installation:
+
+----
+sudo mv /etc/nixos /etc/nixos.bak
+sudo git clone https://github.com/bjornfor/nixos-config /etc/nixos
+sudo cp /etc/nixos.bak/hardware-configuration.nix /etc/nixos/
+sudo ln -sr /etc/nixos/machines/$MACHINE.nix /etc/nixos/configuration.nix
+----
